@@ -86,3 +86,12 @@ C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\EntityFramework.dl
 C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\EntityFramework.SqlServer.dll
 C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\EntityFramework.xml
 C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Microsoft.Owin.Diagnostics.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Microsoft.Owin.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Microsoft.Owin.Hosting.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Owin.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Microsoft.Owin.xml
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Microsoft.Owin.Diagnostics.xml
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\User\Documents\code\C1808L\EAP\bai01\bai01\bai01\bin\Microsoft.Owin.Hosting.xml
