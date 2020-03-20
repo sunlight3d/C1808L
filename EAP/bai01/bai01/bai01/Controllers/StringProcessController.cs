@@ -6,6 +6,7 @@ using System.Web.Http;
 
 namespace bai01.Controllers
 {
+    
     public class StringProcessController: ApiController
     {
         // GET api/values
@@ -14,11 +15,12 @@ namespace bai01.Controllers
         {
             return "Hello World";
         }*/
-
+        //https://localhost:44392/api/StringProcess?name=Hoang
         public string Get(string name)
         {
-            return "Helloc mr "+name;
+            return "Helloc mr "+name;//chi de test api
         }
+        //https://localhost:44392/api/StringProcess
         public DateTime Get()
         {
             return DateTime.Now;
