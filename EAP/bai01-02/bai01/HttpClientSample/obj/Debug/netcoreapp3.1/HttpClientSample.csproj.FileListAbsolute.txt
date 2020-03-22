@@ -1,0 +1,10 @@
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\HttpClientSample.exe
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.csprojAssemblyReference.cache
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\staticwebassets\HttpClientSample.StaticWebAssets.Manifest.cache
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\staticwebassets\HttpClientSample.StaticWebAssets.xml
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.AssemblyInfoInputs.cache
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.AssemblyInfo.cs
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.RazorTargetAssemblyInfo.cache
