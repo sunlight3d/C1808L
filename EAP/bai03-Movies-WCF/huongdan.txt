@@ -4,3 +4,9 @@
 -Chuot phai App_Data, chon SQL Server Database
 -Refactor rename IService1 thanh IMoviesInterface
 -Add Item -> ADO.NET(ActiveX Data Objects) Entity Data Model
+
+Tao MVC Project: new project => ASP.NET Web application
+Right click References -> Add Service Reference, chon Discover: 
+http://localhost:50281/MoviesInterfaceImplementation.svc
+
+

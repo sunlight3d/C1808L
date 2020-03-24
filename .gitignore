@@ -6,7 +6,7 @@ packages/
 *.log
 *.exe
 *.bin
-
+*.ldf
 # BlueJ files
 *.ctxt
 

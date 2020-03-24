@@ -14,17 +14,73 @@ namespace bai03
     {
         public void Add(Movie m)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (MoviesEntities entities = new MoviesEntities())
+                {
+                    entities.Movies.Add(m);
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine("Cannot add movie:" + exception.ToString());
+            }
         }
 
         public void Delete(int Id)
         {
-            throw new NotImplementedException();
+            if (Id <= 0)
+            {
+                Console.WriteLine("Id is invalid(must be > 0)");
+            }
+            try
+            {
+                using (MoviesEntities entities = new MoviesEntities())
+                {
+                    Movie foundMovie = entities.Movies.FirstOrDefault(movie => movie.MovieId == Id);
+                    if (foundMovie != null)
+                    {
+                        entities.Entry(foundMovie).State = System.Data.Entity.EntityState.Deleted;
+                        entities.SaveChanges();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Cannot find movie to delete");
+                    }
+                }
+            }
+            catch (Exception exception)
+
+            {
+                Console.WriteLine("Cannot update movie:" + exception.ToString());
+            }
         }
 
         public void Edit(Movie m)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (MoviesEntities entities = new MoviesEntities())
+                {
+                    Movie foundMovie = entities.Movies.FirstOrDefault(movie => movie.MovieId == m.MovieId);
+                    if (foundMovie != null)
+                    {
+                        foundMovie.Title = m.Title;
+                        foundMovie.ReleaseDate = m.ReleaseDate;
+                        foundMovie.RunningTime = m.RunningTime;
+                        foundMovie.GenreId = m.GenreId;
+                        foundMovie.BoxOffice = m.BoxOffice;
+                        entities.SaveChanges();
+                    }
+                    else {
+                        Console.WriteLine("Cannot find movie to update");
+                    }
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine("Cannot update movie:" + exception.ToString());
+            }
         }
 
         public List<Movie> GetAll()
@@ -39,7 +95,19 @@ namespace bai03
 
         public Movie GetById(int Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (MoviesEntities entities = new MoviesEntities())
+                {
+                    Movie foundMovie = entities.Movies.FirstOrDefault(movie => movie.MovieId == Id);
+                    return foundMovie;                    
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine("Cannot get movie's information:" + exception.ToString());
+                return null;
+            }
         }
 
         public string GetData(int value)
@@ -60,9 +128,21 @@ namespace bai03
             return composite;
         }
 
-        public List<Movie> Search(string Search)
+        public List<Movie> Search(string Title)
         {
-            throw new NotImplementedException();
+            try {
+                using (MoviesEntities entities = new MoviesEntities())
+                {
+                    List<Movie> foundMovies = entities.Movies.Where(movie => movie.Title == Title).ToList();
+                    return foundMovies;
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine("Cannot get movie's information:" + exception.ToString());
+                return new List<Movie>();
+            }
+            
         }
     }
 }
