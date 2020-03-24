@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bai01", "bai01\bai01.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{663197EA-9BFC-4140-A340-E2CA7392E8DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientSample", "HttpClientSample\HttpClientSample.csproj", "{C42F598B-BDBE-43DA-AE8F-33D936C1BEE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "ClientApp\ClientApp.csproj", "{7C105083-B25A-4F7D-8B52-A0C508E9F74B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{663197EA-9BFC-4140-A340-E2CA7392E8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{663197EA-9BFC-4140-A340-E2CA7392E8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{663197EA-9BFC-4140-A340-E2CA7392E8DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C42F598B-BDBE-43DA-AE8F-33D936C1BEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C42F598B-BDBE-43DA-AE8F-33D936C1BEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C42F598B-BDBE-43DA-AE8F-33D936C1BEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C42F598B-BDBE-43DA-AE8F-33D936C1BEE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C105083-B25A-4F7D-8B52-A0C508E9F74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C105083-B25A-4F7D-8B52-A0C508E9F74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C105083-B25A-4F7D-8B52-A0C508E9F74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C105083-B25A-4F7D-8B52-A0C508E9F74B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

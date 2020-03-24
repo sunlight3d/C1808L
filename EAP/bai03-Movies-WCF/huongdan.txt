@@ -1,0 +1,6 @@
+-Tao project moi, chon Template WCF(Windows Communication Foundation) Service Application
+-Neu chua co, vao Indivisual components, search wcf, chon checkbox Windows Communication Foundation
+-Cai dat Entity Framework bang Nuget: Install-Package EntityFramework -Version 6.4.0
+-Chuot phai App_Data, chon SQL Server Database
+-Refactor rename IService1 thanh IMoviesInterface
+-Add Item -> ADO.NET(ActiveX Data Objects) Entity Data Model

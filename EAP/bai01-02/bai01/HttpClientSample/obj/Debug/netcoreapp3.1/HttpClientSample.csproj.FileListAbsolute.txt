@@ -8,3 +8,15 @@ C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debu
 C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.AssemblyInfoInputs.cache
 C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.AssemblyInfo.cs
 C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.RazorTargetAssemblyInfo.cache
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\HttpClientSample.deps.json
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\HttpClientSample.runtimeconfig.json
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\HttpClientSample.runtimeconfig.dev.json
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\HttpClientSample.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\HttpClientSample.pdb
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.csproj.CopyComplete
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai01-02\bai01\HttpClientSample\obj\Debug\netcoreapp3.1\HttpClientSample.pdb
