@@ -86,13 +86,14 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <Content Include="MoviesInterfaceImplementation.svc" />
+    <Content Include="MoviesService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Genre.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="IMoviesService.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -111,10 +112,9 @@
     <Compile Include="Movie.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="MoviesInterfaceImplementation.svc.cs">
-      <DependentUpon>MoviesInterfaceImplementation.svc</DependentUpon>
+    <Compile Include="MoviesService.svc.cs">
+      <DependentUpon>MoviesService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IMoviesInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

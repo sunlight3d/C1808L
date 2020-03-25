@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="bai03.Service1" CodeBehind="MoviesInterfaceImplementation.svc.cs" %>
