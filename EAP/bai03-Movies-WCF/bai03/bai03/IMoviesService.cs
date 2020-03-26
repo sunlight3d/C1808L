@@ -11,8 +11,6 @@ namespace bai03
     [ServiceContract]
     public interface IMoviesService
     {
-        [OperationContract]
-        double AddNumber(double x, double y);
         
          [OperationContract]
         List<Movie> GetAll();

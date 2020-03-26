@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -11,12 +12,9 @@ namespace bai03
     // NOTE: In order to launch WCF Test Client for testing this service, please select MoviesService.svc or MoviesService.svc.cs at the Solution Explorer and start debugging.
     public class MoviesService : IMoviesService
     {
-        public double AddNumber(double x, double y)
-        {
-            return x + y;
-        }
         public List<Movie> GetAll()
         {
+
             using (MoviesEntities entities = new MoviesEntities())
             {
 
@@ -32,6 +30,7 @@ namespace bai03
                 using (MoviesEntities entities = new MoviesEntities())
                 {
                     entities.Movies.Add(m);
+                    entities.SaveChanges();
                 }
             }
             catch (Exception exception)
