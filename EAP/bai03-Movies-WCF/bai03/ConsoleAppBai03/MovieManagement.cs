@@ -20,8 +20,7 @@ namespace ConsoleAppBai03
             try
             {
                 client = new Service1Client();
-                var movies = client.GetAll();
-                foreach (Movie movie in movies)
+                foreach (Movie movie in client.GetAll())
                 {
                     Console.WriteLine(movie);
                 }
