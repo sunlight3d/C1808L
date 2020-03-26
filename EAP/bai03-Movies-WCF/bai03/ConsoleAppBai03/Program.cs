@@ -13,7 +13,8 @@ namespace ConsoleAppBai03
     {
         static void Main(string[] args)
         {
-            
+            MovieManagement movieManagement = new MovieManagement();
+           
             int choice = -1;
             while (choice != 7) {
                 Console.WriteLine("1. List all movies");
@@ -27,12 +28,7 @@ namespace ConsoleAppBai03
                 choice = Convert.ToInt16(Console.ReadLine());
                 switch (choice) {
                     case 1:
-                        MoviesServiceClient moviesServiceClient = new MoviesServiceClient();
-                        ServiceReference1.Movie[] movies = moviesServiceClient.GetAll();
-                        foreach(Movie movie in movies) {
-                            Console.WriteLine(movie);
-                        }
-                        moviesServiceClient.Close();
+                        movieManagement.ShowAllMovies();
                         break;
                     case 2:
                         break;
