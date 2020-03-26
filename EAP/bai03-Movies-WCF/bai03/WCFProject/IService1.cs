@@ -12,11 +12,20 @@ namespace WCFProject
     [ServiceContract]
     public interface IService1
     {
-
         [OperationContract]
-        string GetData(int value);
+        void Add(Movie m);
         [OperationContract]
         List<Movie> GetAll();
+        [OperationContract]
+        List<Movie> Search(string Title);
+
+        [OperationContract]
+        Movie GetById(int Id);
+
+        [OperationContract]
+        void Edit(Movie m);
+        [OperationContract]
+        void Delete(int Id);
     }
 
 
