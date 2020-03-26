@@ -13,10 +13,10 @@ namespace bai03
     {
         [OperationContract]
         double AddNumber(double x, double y);
-        /*
+        
          [OperationContract]
         List<Movie> GetAll();
-
+        
         [OperationContract]
         List<Movie> Search(string Title);
         
@@ -30,6 +30,6 @@ namespace bai03
         void Edit(Movie m);
         [OperationContract]
         void Delete(int Id);
-         */
+         
     }
 }

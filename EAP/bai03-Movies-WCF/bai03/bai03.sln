@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCProject", "MVCProject\MV
 		{01C11CD2-F7C2-473D-8CAF-420764CAE8CB} = {01C11CD2-F7C2-473D-8CAF-420764CAE8CB}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppBai03", "ConsoleAppBai03\ConsoleAppBai03.csproj", "{A6A335C8-6311-4B5D-AFEC-BE208B3E7424}"
+	ProjectSection(ProjectDependencies) = postProject
+		{01C11CD2-F7C2-473D-8CAF-420764CAE8CB} = {01C11CD2-F7C2-473D-8CAF-420764CAE8CB}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +29,10 @@ Global
 		{DE180CCE-668D-4CA5-801D-A4D224C19401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE180CCE-668D-4CA5-801D-A4D224C19401}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE180CCE-668D-4CA5-801D-A4D224C19401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A335C8-6311-4B5D-AFEC-BE208B3E7424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A335C8-6311-4B5D-AFEC-BE208B3E7424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A335C8-6311-4B5D-AFEC-BE208B3E7424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A335C8-6311-4B5D-AFEC-BE208B3E7424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

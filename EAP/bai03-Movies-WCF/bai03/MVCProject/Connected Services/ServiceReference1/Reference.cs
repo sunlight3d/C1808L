@@ -9,7 +9,227 @@
 //------------------------------------------------------------------------------
 
 namespace MVCProject.ServiceReference1 {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Movie", Namespace="http://schemas.datacontract.org/2004/07/bai03")]
+    [System.SerializableAttribute()]
+    public partial class Movie : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal BoxOfficeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private MVCProject.ServiceReference1.Genre GenreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int GenreIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int MovieIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime ReleaseDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int RunningTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TitleField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal BoxOffice {
+            get {
+                return this.BoxOfficeField;
+            }
+            set {
+                if ((this.BoxOfficeField.Equals(value) != true)) {
+                    this.BoxOfficeField = value;
+                    this.RaisePropertyChanged("BoxOffice");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public MVCProject.ServiceReference1.Genre Genre {
+            get {
+                return this.GenreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GenreField, value) != true)) {
+                    this.GenreField = value;
+                    this.RaisePropertyChanged("Genre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int GenreId {
+            get {
+                return this.GenreIdField;
+            }
+            set {
+                if ((this.GenreIdField.Equals(value) != true)) {
+                    this.GenreIdField = value;
+                    this.RaisePropertyChanged("GenreId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int MovieId {
+            get {
+                return this.MovieIdField;
+            }
+            set {
+                if ((this.MovieIdField.Equals(value) != true)) {
+                    this.MovieIdField = value;
+                    this.RaisePropertyChanged("MovieId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime ReleaseDate {
+            get {
+                return this.ReleaseDateField;
+            }
+            set {
+                if ((this.ReleaseDateField.Equals(value) != true)) {
+                    this.ReleaseDateField = value;
+                    this.RaisePropertyChanged("ReleaseDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int RunningTime {
+            get {
+                return this.RunningTimeField;
+            }
+            set {
+                if ((this.RunningTimeField.Equals(value) != true)) {
+                    this.RunningTimeField = value;
+                    this.RaisePropertyChanged("RunningTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Title {
+            get {
+                return this.TitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TitleField, value) != true)) {
+                    this.TitleField = value;
+                    this.RaisePropertyChanged("Title");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Genre", Namespace="http://schemas.datacontract.org/2004/07/bai03")]
+    [System.SerializableAttribute()]
+    public partial class Genre : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int GenreIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string GenreNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private MVCProject.ServiceReference1.Movie[] MoviesField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int GenreId {
+            get {
+                return this.GenreIdField;
+            }
+            set {
+                if ((this.GenreIdField.Equals(value) != true)) {
+                    this.GenreIdField = value;
+                    this.RaisePropertyChanged("GenreId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string GenreName {
+            get {
+                return this.GenreNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GenreNameField, value) != true)) {
+                    this.GenreNameField = value;
+                    this.RaisePropertyChanged("GenreName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public MVCProject.ServiceReference1.Movie[] Movies {
+            get {
+                return this.MoviesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MoviesField, value) != true)) {
+                    this.MoviesField = value;
+                    this.RaisePropertyChanged("Movies");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IMoviesService")]
@@ -20,6 +240,12 @@ namespace MVCProject.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/AddNumber", ReplyAction="http://tempuri.org/IMoviesService/AddNumberResponse")]
         System.Threading.Tasks.Task<double> AddNumberAsync(double x, double y);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/GetAll", ReplyAction="http://tempuri.org/IMoviesService/GetAllResponse")]
+        MVCProject.ServiceReference1.Movie[] GetAll();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/GetAll", ReplyAction="http://tempuri.org/IMoviesService/GetAllResponse")]
+        System.Threading.Tasks.Task<MVCProject.ServiceReference1.Movie[]> GetAllAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +281,14 @@ namespace MVCProject.ServiceReference1 {
         
         public System.Threading.Tasks.Task<double> AddNumberAsync(double x, double y) {
             return base.Channel.AddNumberAsync(x, y);
+        }
+        
+        public MVCProject.ServiceReference1.Movie[] GetAll() {
+            return base.Channel.GetAll();
+        }
+        
+        public System.Threading.Tasks.Task<MVCProject.ServiceReference1.Movie[]> GetAllAsync() {
+            return base.Channel.GetAllAsync();
         }
     }
 }

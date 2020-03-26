@@ -4,6 +4,7 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:50281/MoviesService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:50281/MoviesService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50281/MoviesService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/bai03" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IMoviesService_AddNumber_InputMessage">
@@ -12,16 +13,35 @@
   <wsdl:message name="IMoviesService_AddNumber_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddNumberResponse" />
   </wsdl:message>
+  <wsdl:message name="IMoviesService_GetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="IMoviesService_GetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
   <wsdl:portType name="IMoviesService">
     <wsdl:operation name="AddNumber">
       <wsdl:input wsaw:Action="http://tempuri.org/IMoviesService/AddNumber" message="tns:IMoviesService_AddNumber_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IMoviesService/AddNumberResponse" message="tns:IMoviesService_AddNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMoviesService/GetAll" message="tns:IMoviesService_GetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMoviesService/GetAllResponse" message="tns:IMoviesService_GetAll_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IMoviesService" type="tns:IMoviesService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="AddNumber">
       <soap:operation soapAction="http://tempuri.org/IMoviesService/AddNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://tempuri.org/IMoviesService/GetAll" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

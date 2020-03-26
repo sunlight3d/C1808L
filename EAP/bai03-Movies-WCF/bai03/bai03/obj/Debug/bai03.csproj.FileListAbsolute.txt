@@ -9,4 +9,3 @@ C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\bai03\obj\Debug\b
 C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\bai03\obj\Debug\bai03.csproj.CopyComplete
 C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\bai03\obj\Debug\bai03.dll
 C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\bai03\obj\Debug\bai03.pdb
-C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\bai03\obj\Debug\bai03.csprojAssemblyReference.cache

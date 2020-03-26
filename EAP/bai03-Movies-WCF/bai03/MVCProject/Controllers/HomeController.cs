@@ -10,7 +10,9 @@ namespace MVCProject.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            ServiceReference1.MoviesServiceClient moviesServiceClient = new ServiceReference1.MoviesServiceClient();
+            moviesServiceClient.GetAll();
+            return Content("aaa");
         }
 
         public ActionResult About()

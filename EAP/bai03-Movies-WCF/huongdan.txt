@@ -7,6 +7,8 @@
 
 Tao MVC Project: new project => ASP.NET Web application
 Right click References -> Add Service Reference, chon Discover: 
-http://localhost:50281/MoviesInterfaceImplementation.svc
+http://localhost:50281/MoviesService.svc
+Test tren trinh duyet:
+http://localhost:50281/MoviesService.svc?singleWsdl
 
 

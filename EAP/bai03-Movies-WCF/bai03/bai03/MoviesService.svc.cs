@@ -15,8 +15,17 @@ namespace bai03
         {
             return x + y;
         }
-        /*
-         public void Add(Movie m)
+        public List<Movie> GetAll()
+        {
+            using (MoviesEntities entities = new MoviesEntities())
+            {
+
+                List<Movie> movies = entities.Movies.ToList();
+                return movies.ToList();
+            }
+        }
+        
+        public void Add(Movie m)
         {
             try
             {
@@ -87,15 +96,7 @@ namespace bai03
             }
         }
 
-        public List<Movie> GetAll()
-        {
-            using (MoviesEntities entities = new MoviesEntities())
-            {
-                
-                List<Movie> movies = entities.Movies.ToList();
-                return movies.ToList();
-            }
-        }
+        
 
         public Movie GetById(int Id)
         {
@@ -114,23 +115,7 @@ namespace bai03
             }
         }
 
-        public string GetData(int value)
-        {
-            return string.Format("You entered: {0}", value);
-        }
         
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
-        }
 
         public List<Movie> Search(string Title)
         {
@@ -148,6 +133,6 @@ namespace bai03
             }
             
         }
-         */
+         
     }
 }
