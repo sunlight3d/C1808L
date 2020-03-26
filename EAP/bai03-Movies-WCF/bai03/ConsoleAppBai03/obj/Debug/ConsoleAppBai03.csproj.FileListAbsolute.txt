@@ -1,7 +1,7 @@
-C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\bin\Debug\ConsoleAppBai03.exe.config
 C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\bin\Debug\ConsoleAppBai03.exe
-C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\bin\Debug\ConsoleAppBai03.pdb
-C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\obj\Debug\ConsoleAppBai03.csprojAssemblyReference.cache
+C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\bin\Debug\ConsoleAppBai03.exe.config
 C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\obj\Debug\ConsoleAppBai03.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\obj\Debug\ConsoleAppBai03.exe
 C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\obj\Debug\ConsoleAppBai03.pdb
+C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\bin\Debug\ConsoleAppBai03.pdb
+C:\Users\User\Documents\code\C1808L\EAP\bai03-Movies-WCF\bai03\ConsoleAppBai03\obj\Debug\ConsoleAppBai03.csprojAssemblyReference.cache

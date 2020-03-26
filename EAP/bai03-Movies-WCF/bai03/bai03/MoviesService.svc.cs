@@ -12,17 +12,15 @@ namespace bai03
     // NOTE: In order to launch WCF Test Client for testing this service, please select MoviesService.svc or MoviesService.svc.cs at the Solution Explorer and start debugging.
     public class MoviesService : IMoviesService
     {
+        
         public List<Movie> GetAll()
         {
-
-            using (MoviesEntities entities = new MoviesEntities())
-            {
-
-                List<Movie> movies = entities.Movies.ToList();
-                return movies.ToList();
-            }
+            MoviesEntities entities = new MoviesEntities();
+            List<Movie> movies = entities.Movies.ToList();
+            return movies.ToList();
+          
         }
-        
+        /*
         public void Add(Movie m)
         {
             try
@@ -132,6 +130,8 @@ namespace bai03
             }
             
         }
+        */
          
     }
+    
 }

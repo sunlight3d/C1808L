@@ -15,7 +15,7 @@ namespace ConsoleAppBai03.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Movie", Namespace="http://schemas.datacontract.org/2004/07/bai03")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Movie", Namespace="http://schemas.datacontract.org/2004/07/WCFProject")]
     [System.SerializableAttribute()]
     public partial class Movie : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -156,7 +156,7 @@ namespace ConsoleAppBai03.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Genre", Namespace="http://schemas.datacontract.org/2004/07/bai03")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Genre", Namespace="http://schemas.datacontract.org/2004/07/WCFProject")]
     [System.SerializableAttribute()]
     public partial class Genre : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -232,55 +232,55 @@ namespace ConsoleAppBai03.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IMoviesService")]
-    public interface IMoviesService {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
+    public interface IService1 {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/AddNumber", ReplyAction="http://tempuri.org/IMoviesService/AddNumberResponse")]
-        double AddNumber(double x, double y);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
+        string GetData(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/AddNumber", ReplyAction="http://tempuri.org/IMoviesService/AddNumberResponse")]
-        System.Threading.Tasks.Task<double> AddNumberAsync(double x, double y);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
+        System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/GetAll", ReplyAction="http://tempuri.org/IMoviesService/GetAllResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAll", ReplyAction="http://tempuri.org/IService1/GetAllResponse")]
         ConsoleAppBai03.ServiceReference1.Movie[] GetAll();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/GetAll", ReplyAction="http://tempuri.org/IMoviesService/GetAllResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAll", ReplyAction="http://tempuri.org/IService1/GetAllResponse")]
         System.Threading.Tasks.Task<ConsoleAppBai03.ServiceReference1.Movie[]> GetAllAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IMoviesServiceChannel : ConsoleAppBai03.ServiceReference1.IMoviesService, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : ConsoleAppBai03.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class MoviesServiceClient : System.ServiceModel.ClientBase<ConsoleAppBai03.ServiceReference1.IMoviesService>, ConsoleAppBai03.ServiceReference1.IMoviesService {
+    public partial class Service1Client : System.ServiceModel.ClientBase<ConsoleAppBai03.ServiceReference1.IService1>, ConsoleAppBai03.ServiceReference1.IService1 {
         
-        public MoviesServiceClient() {
+        public Service1Client() {
         }
         
-        public MoviesServiceClient(string endpointConfigurationName) : 
+        public Service1Client(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public MoviesServiceClient(string endpointConfigurationName, string remoteAddress) : 
+        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public MoviesServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public MoviesServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public double AddNumber(double x, double y) {
-            return base.Channel.AddNumber(x, y);
+        public string GetData(int value) {
+            return base.Channel.GetData(value);
         }
         
-        public System.Threading.Tasks.Task<double> AddNumberAsync(double x, double y) {
-            return base.Channel.AddNumberAsync(x, y);
+        public System.Threading.Tasks.Task<string> GetDataAsync(int value) {
+            return base.Channel.GetDataAsync(value);
         }
         
         public ConsoleAppBai03.ServiceReference1.Movie[] GetAll() {

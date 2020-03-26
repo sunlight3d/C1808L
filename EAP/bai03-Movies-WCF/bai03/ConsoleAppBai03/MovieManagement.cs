@@ -9,7 +9,8 @@ namespace ConsoleAppBai03
 {
     class MovieManagement
     {
-        private MoviesServiceClient moviesServiceClient;
+        
+        private Service1Client client;
         public void InsertMovie()
         {
 
@@ -18,16 +19,16 @@ namespace ConsoleAppBai03
         {
             try
             {
-                moviesServiceClient = new MoviesServiceClient();
-                var movies = moviesServiceClient.GetAll();
+                client = new Service1Client();
+                var movies = client.GetAll();
                 foreach (Movie movie in movies)
                 {
                     Console.WriteLine(movie);
                 }
-                moviesServiceClient.Close();
+                client.Close();
             }
             catch (Exception e) {
-                Console.WriteLine("Cannot get all movies");
+                Console.WriteLine("Cannot get all movies"+e.ToString());
             }
         }
         public void UpdateMovie()
