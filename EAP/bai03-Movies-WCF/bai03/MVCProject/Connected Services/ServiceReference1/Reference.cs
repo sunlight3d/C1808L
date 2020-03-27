@@ -15,7 +15,7 @@ namespace MVCProject.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Movie", Namespace="http://schemas.datacontract.org/2004/07/bai03")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Movie", Namespace="http://schemas.datacontract.org/2004/07/WCFProject")]
     [System.SerializableAttribute()]
     public partial class Movie : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -156,7 +156,7 @@ namespace MVCProject.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Genre", Namespace="http://schemas.datacontract.org/2004/07/bai03")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Genre", Namespace="http://schemas.datacontract.org/2004/07/WCFProject")]
     [System.SerializableAttribute()]
     public partial class Genre : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -232,55 +232,79 @@ namespace MVCProject.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IMoviesService")]
-    public interface IMoviesService {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
+    public interface IService1 {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/AddNumber", ReplyAction="http://tempuri.org/IMoviesService/AddNumberResponse")]
-        double AddNumber(double x, double y);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Add", ReplyAction="http://tempuri.org/IService1/AddResponse")]
+        void Add(MVCProject.ServiceReference1.Movie m);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/AddNumber", ReplyAction="http://tempuri.org/IMoviesService/AddNumberResponse")]
-        System.Threading.Tasks.Task<double> AddNumberAsync(double x, double y);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Add", ReplyAction="http://tempuri.org/IService1/AddResponse")]
+        System.Threading.Tasks.Task AddAsync(MVCProject.ServiceReference1.Movie m);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/GetAll", ReplyAction="http://tempuri.org/IMoviesService/GetAllResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAll", ReplyAction="http://tempuri.org/IService1/GetAllResponse")]
         MVCProject.ServiceReference1.Movie[] GetAll();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMoviesService/GetAll", ReplyAction="http://tempuri.org/IMoviesService/GetAllResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAll", ReplyAction="http://tempuri.org/IService1/GetAllResponse")]
         System.Threading.Tasks.Task<MVCProject.ServiceReference1.Movie[]> GetAllAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Search", ReplyAction="http://tempuri.org/IService1/SearchResponse")]
+        MVCProject.ServiceReference1.Movie[] Search(string Title);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Search", ReplyAction="http://tempuri.org/IService1/SearchResponse")]
+        System.Threading.Tasks.Task<MVCProject.ServiceReference1.Movie[]> SearchAsync(string Title);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetById", ReplyAction="http://tempuri.org/IService1/GetByIdResponse")]
+        MVCProject.ServiceReference1.Movie GetById(int Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetById", ReplyAction="http://tempuri.org/IService1/GetByIdResponse")]
+        System.Threading.Tasks.Task<MVCProject.ServiceReference1.Movie> GetByIdAsync(int Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Edit", ReplyAction="http://tempuri.org/IService1/EditResponse")]
+        void Edit(MVCProject.ServiceReference1.Movie m);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Edit", ReplyAction="http://tempuri.org/IService1/EditResponse")]
+        System.Threading.Tasks.Task EditAsync(MVCProject.ServiceReference1.Movie m);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Delete", ReplyAction="http://tempuri.org/IService1/DeleteResponse")]
+        void Delete(int Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Delete", ReplyAction="http://tempuri.org/IService1/DeleteResponse")]
+        System.Threading.Tasks.Task DeleteAsync(int Id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IMoviesServiceChannel : MVCProject.ServiceReference1.IMoviesService, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : MVCProject.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class MoviesServiceClient : System.ServiceModel.ClientBase<MVCProject.ServiceReference1.IMoviesService>, MVCProject.ServiceReference1.IMoviesService {
+    public partial class Service1Client : System.ServiceModel.ClientBase<MVCProject.ServiceReference1.IService1>, MVCProject.ServiceReference1.IService1 {
         
-        public MoviesServiceClient() {
+        public Service1Client() {
         }
         
-        public MoviesServiceClient(string endpointConfigurationName) : 
+        public Service1Client(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public MoviesServiceClient(string endpointConfigurationName, string remoteAddress) : 
+        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public MoviesServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public MoviesServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public double AddNumber(double x, double y) {
-            return base.Channel.AddNumber(x, y);
+        public void Add(MVCProject.ServiceReference1.Movie m) {
+            base.Channel.Add(m);
         }
         
-        public System.Threading.Tasks.Task<double> AddNumberAsync(double x, double y) {
-            return base.Channel.AddNumberAsync(x, y);
+        public System.Threading.Tasks.Task AddAsync(MVCProject.ServiceReference1.Movie m) {
+            return base.Channel.AddAsync(m);
         }
         
         public MVCProject.ServiceReference1.Movie[] GetAll() {
@@ -289,6 +313,38 @@ namespace MVCProject.ServiceReference1 {
         
         public System.Threading.Tasks.Task<MVCProject.ServiceReference1.Movie[]> GetAllAsync() {
             return base.Channel.GetAllAsync();
+        }
+        
+        public MVCProject.ServiceReference1.Movie[] Search(string Title) {
+            return base.Channel.Search(Title);
+        }
+        
+        public System.Threading.Tasks.Task<MVCProject.ServiceReference1.Movie[]> SearchAsync(string Title) {
+            return base.Channel.SearchAsync(Title);
+        }
+        
+        public MVCProject.ServiceReference1.Movie GetById(int Id) {
+            return base.Channel.GetById(Id);
+        }
+        
+        public System.Threading.Tasks.Task<MVCProject.ServiceReference1.Movie> GetByIdAsync(int Id) {
+            return base.Channel.GetByIdAsync(Id);
+        }
+        
+        public void Edit(MVCProject.ServiceReference1.Movie m) {
+            base.Channel.Edit(m);
+        }
+        
+        public System.Threading.Tasks.Task EditAsync(MVCProject.ServiceReference1.Movie m) {
+            return base.Channel.EditAsync(m);
+        }
+        
+        public void Delete(int Id) {
+            base.Channel.Delete(Id);
+        }
+        
+        public System.Threading.Tasks.Task DeleteAsync(int Id) {
+            return base.Channel.DeleteAsync(Id);
         }
     }
 }
