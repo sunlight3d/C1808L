@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\MovieServiceReference\Reference.cs">
+    <Compile Include="Connected Services\MovieServiceClient\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -56,17 +56,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\MovieServiceReference\MovieService.wsdl" />
-    <None Include="Connected Services\MovieServiceReference\MovieService.xsd">
+    <None Include="Connected Services\MovieServiceClient\MovieService.wsdl" />
+    <None Include="Connected Services\MovieServiceClient\MovieService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\MovieServiceReference\MovieService1.xsd">
+    <None Include="Connected Services\MovieServiceClient\MovieService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\MovieServiceReference\MovieService2.xsd">
+    <None Include="Connected Services\MovieServiceClient\MovieService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\MovieServiceReference\WCFConsoleApp.MovieServiceReference.Movie.datasource">
+    <None Include="Connected Services\MovieServiceClient\WCFConsoleApp.MovieServiceClient.Movie.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
@@ -74,19 +74,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\MovieServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\MovieServiceClient\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\MovieServiceReference\MovieService.disco" />
+    <None Include="Connected Services\MovieServiceClient\MovieService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\MovieServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\MovieServiceClient\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\MovieServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\MovieServiceClient\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\MovieServiceReference\Reference.svcmap">
+    <None Include="Connected Services\MovieServiceClient\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

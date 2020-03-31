@@ -18,6 +18,7 @@ namespace bai03_wcfService
         public MoviesEntities()
             : base("name=MoviesEntities")
         {
+            Configuration.ProxyCreationEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

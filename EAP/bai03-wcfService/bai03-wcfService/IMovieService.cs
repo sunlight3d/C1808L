@@ -17,5 +17,15 @@ namespace bai03_wcfService
         
         [OperationContract]
         List<Movie> Search(String text);
+
+        [OperationContract]
+        void Add(Movie m);
+
+        [OperationContract]
+        void Edit(Movie m);
+
+        [OperationContract]
+        void Delete(int id);
+
     }
 }
