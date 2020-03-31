@@ -6,11 +6,9 @@ packages/
 *.log
 *.exe
 *.bin
-*.ldf
 # BlueJ files
 *.ctxt
 
-*.mdf
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
