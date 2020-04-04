@@ -1,7 +1,0 @@
-C:\Users\User\source\repos\bai03-wcfService\WCFConsoleApp\bin\Debug\WCFConsoleApp.exe.config
-C:\Users\User\source\repos\bai03-wcfService\WCFConsoleApp\bin\Debug\WCFConsoleApp.exe
-C:\Users\User\source\repos\bai03-wcfService\WCFConsoleApp\bin\Debug\WCFConsoleApp.pdb
-C:\Users\User\source\repos\bai03-wcfService\WCFConsoleApp\obj\Debug\WCFConsoleApp.csprojAssemblyReference.cache
-C:\Users\User\source\repos\bai03-wcfService\WCFConsoleApp\obj\Debug\WCFConsoleApp.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\bai03-wcfService\WCFConsoleApp\obj\Debug\WCFConsoleApp.exe
-C:\Users\User\source\repos\bai03-wcfService\WCFConsoleApp\obj\Debug\WCFConsoleApp.pdb

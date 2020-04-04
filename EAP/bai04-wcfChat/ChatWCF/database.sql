@@ -1,0 +1,19 @@
+DROP DATABASE dbChat;
+CREATE DATABASE dbChat;
+USE dbChat;
+CREATE TABLE tblChat(
+	Id INT IDENTITY PRIMARY KEY,
+	Content NVARCHAR(1000),
+	productDescription VARCHAR(1000),
+	UserName NVARCHAR(200),
+	SentTime DateTime,
+);
+
+CREATE TABLE tblUser(
+	UserName NVARCHAR(200) PRIMARY KEY,
+	Password NVARCHAR(200)
+);
+
+ALTER TABLE tblChat 
+ADD CONSTRAINT FK_UserChat 
+FOREIGN KEY (UserName) REFERENCES tblUser(UserName);
