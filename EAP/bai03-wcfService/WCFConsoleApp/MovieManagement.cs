@@ -34,7 +34,7 @@ namespace WCFConsoleApp
         public void Search()
         {
             Console.WriteLine("Enter text to search : ");
-            String text = Console.ReadLine();
+            String text = Convert.ToString(Console.ReadLine());
             List<Movie> movies = client.Search(text);
             Console.WriteLine("Result here : ");
             foreach (Movie movie in movies)

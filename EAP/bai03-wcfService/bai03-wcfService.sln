@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFConsoleApp", "WCFConsole
 		{169E4477-48F7-4F5D-94C1-061C846E73B5} = {169E4477-48F7-4F5D-94C1-061C846E73B5}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApp", "MVCApp\MVCApp.csproj", "{0E4D3940-AAE3-4B79-B8DD-1A2D5F2EC2FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{169E4477-48F7-4F5D-94C1-061C846E73B5} = {169E4477-48F7-4F5D-94C1-061C846E73B5}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +29,10 @@ Global
 		{BBADD944-3DFC-46C3-AA24-C53C34DFA968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBADD944-3DFC-46C3-AA24-C53C34DFA968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBADD944-3DFC-46C3-AA24-C53C34DFA968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E4D3940-AAE3-4B79-B8DD-1A2D5F2EC2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4D3940-AAE3-4B79-B8DD-1A2D5F2EC2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4D3940-AAE3-4B79-B8DD-1A2D5F2EC2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4D3940-AAE3-4B79-B8DD-1A2D5F2EC2FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

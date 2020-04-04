@@ -248,22 +248,22 @@ namespace WCFConsoleApp.MovieServiceClient {
         System.Threading.Tasks.Task<System.Collections.Generic.List<WCFConsoleApp.MovieServiceClient.Movie>> SearchAsync(string text);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMovieService/Add", ReplyAction="http://tempuri.org/IMovieService/AddResponse")]
-        bool Add(WCFConsoleApp.MovieServiceClient.Movie m);
+        void Add(WCFConsoleApp.MovieServiceClient.Movie m);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMovieService/Add", ReplyAction="http://tempuri.org/IMovieService/AddResponse")]
-        System.Threading.Tasks.Task<bool> AddAsync(WCFConsoleApp.MovieServiceClient.Movie m);
+        System.Threading.Tasks.Task AddAsync(WCFConsoleApp.MovieServiceClient.Movie m);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMovieService/Edit", ReplyAction="http://tempuri.org/IMovieService/EditResponse")]
-        bool Edit(WCFConsoleApp.MovieServiceClient.Movie m);
+        void Edit(WCFConsoleApp.MovieServiceClient.Movie m);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMovieService/Edit", ReplyAction="http://tempuri.org/IMovieService/EditResponse")]
-        System.Threading.Tasks.Task<bool> EditAsync(WCFConsoleApp.MovieServiceClient.Movie m);
+        System.Threading.Tasks.Task EditAsync(WCFConsoleApp.MovieServiceClient.Movie m);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMovieService/Delete", ReplyAction="http://tempuri.org/IMovieService/DeleteResponse")]
-        bool Delete(int id);
+        void Delete(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMovieService/Delete", ReplyAction="http://tempuri.org/IMovieService/DeleteResponse")]
-        System.Threading.Tasks.Task<bool> DeleteAsync(int id);
+        System.Threading.Tasks.Task DeleteAsync(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -309,27 +309,27 @@ namespace WCFConsoleApp.MovieServiceClient {
             return base.Channel.SearchAsync(text);
         }
         
-        public bool Add(WCFConsoleApp.MovieServiceClient.Movie m) {
-            return base.Channel.Add(m);
+        public void Add(WCFConsoleApp.MovieServiceClient.Movie m) {
+            base.Channel.Add(m);
         }
         
-        public System.Threading.Tasks.Task<bool> AddAsync(WCFConsoleApp.MovieServiceClient.Movie m) {
+        public System.Threading.Tasks.Task AddAsync(WCFConsoleApp.MovieServiceClient.Movie m) {
             return base.Channel.AddAsync(m);
         }
         
-        public bool Edit(WCFConsoleApp.MovieServiceClient.Movie m) {
-            return base.Channel.Edit(m);
+        public void Edit(WCFConsoleApp.MovieServiceClient.Movie m) {
+            base.Channel.Edit(m);
         }
         
-        public System.Threading.Tasks.Task<bool> EditAsync(WCFConsoleApp.MovieServiceClient.Movie m) {
+        public System.Threading.Tasks.Task EditAsync(WCFConsoleApp.MovieServiceClient.Movie m) {
             return base.Channel.EditAsync(m);
         }
         
-        public bool Delete(int id) {
-            return base.Channel.Delete(id);
+        public void Delete(int id) {
+            base.Channel.Delete(id);
         }
         
-        public System.Threading.Tasks.Task<bool> DeleteAsync(int id) {
+        public System.Threading.Tasks.Task DeleteAsync(int id) {
             return base.Channel.DeleteAsync(id);
         }
     }
