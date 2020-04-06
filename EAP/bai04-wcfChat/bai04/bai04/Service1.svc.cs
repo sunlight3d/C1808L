@@ -15,17 +15,17 @@ namespace bai04
         private ChatDb dbContext = new ChatDb();
         public bool Login(string Username, string Password)
         {
-            var query = from user in dbContext.tblUsers 
+            var query = from user in dbContext.tblUsers
                         where user.UserName == Username && user.Password == Password
-                select user;
+                        select user;
             List<User> users = query.ToList();
-            return users.Count > 0;            
+            return users.Count > 0;
         }
 
         public string Register(string Username, string Password)
         {
             try
-            {                
+            {
                 dbContext.tblUsers.Add(new User()
                 {
                     UserName = Username,
@@ -38,12 +38,33 @@ namespace bai04
                 Console.WriteLine("Cannot register user. Error: " + e.ToString());
                 return null;
             }
-            
+
         }
 
         public List<Chat> GetAllChat()
-        { 
-            return dbContext
+        {
+            return dbContext.tblChats.ToList();
+        }
+        public string SendChat(string Content, string UserName)
+        {
+            try
+            {
+                dbContext.tblChats.Add(new Chat()
+                {
+                    Content = Content,
+                    UserName = UserName,
+                    SentTime = DateTime.Now
+
+                });
+                dbContext.SaveChanges();
+                return UserName;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Cannot insert chat. Error: " + e.ToString());
+                return null;
+            }
+
         }
     }
 }

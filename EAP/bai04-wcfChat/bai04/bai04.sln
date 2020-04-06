@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bai04", "bai04\bai04.csproj", "{E79672BE-20AC-43C5-8896-4ACFE1E4AC9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApp", "MVCApp\MVCApp.csproj", "{A62337D7-4DB2-42C5-A8BF-50C0266813D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E79672BE-20AC-43C5-8896-4ACFE1E4AC9C} = {E79672BE-20AC-43C5-8896-4ACFE1E4AC9C}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{E79672BE-20AC-43C5-8896-4ACFE1E4AC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E79672BE-20AC-43C5-8896-4ACFE1E4AC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E79672BE-20AC-43C5-8896-4ACFE1E4AC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62337D7-4DB2-42C5-A8BF-50C0266813D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62337D7-4DB2-42C5-A8BF-50C0266813D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62337D7-4DB2-42C5-A8BF-50C0266813D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62337D7-4DB2-42C5-A8BF-50C0266813D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

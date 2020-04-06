@@ -19,9 +19,9 @@ namespace bai04
         string Register(string Username, string Password);
         [OperationContract]
         List<Chat> GetAllChat();
-    }
-
-
-    
+        
+        [OperationContract]
+        string SendChat(string Content, string UserName);
+    }    
     
 }
