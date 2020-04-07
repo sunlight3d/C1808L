@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfChat", "WcfChat\WcfChat.csproj", "{485CAC7F-87AF-4355-BB78-F065FD74F7A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApp", "MVCApp\MVCApp.csproj", "{31E1F413-E27C-4B59-BF9E-D685D52472CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{485CAC7F-87AF-4355-BB78-F065FD74F7A4} = {485CAC7F-87AF-4355-BB78-F065FD74F7A4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{485CAC7F-87AF-4355-BB78-F065FD74F7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485CAC7F-87AF-4355-BB78-F065FD74F7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485CAC7F-87AF-4355-BB78-F065FD74F7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485CAC7F-87AF-4355-BB78-F065FD74F7A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E1F413-E27C-4B59-BF9E-D685D52472CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E1F413-E27C-4B59-BF9E-D685D52472CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E1F413-E27C-4B59-BF9E-D685D52472CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E1F413-E27C-4B59-BF9E-D685D52472CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA246C39-F133-47FE-ADF6-BA3FCB23E0E1}
+	EndGlobalSection
+EndGlobal

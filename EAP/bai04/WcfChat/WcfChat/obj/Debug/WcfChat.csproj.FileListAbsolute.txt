@@ -1,0 +1,12 @@
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\bin\WcfChat.dll.config
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\bin\WcfChat.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\bin\WcfChat.pdb
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\bin\EntityFramework.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\bin\EntityFramework.xml
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\obj\Debug\WcfChat.csprojAssemblyReference.cache
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\obj\Debug\WcfChat.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\obj\Debug\WcfChat.csproj.CopyComplete
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\obj\Debug\WcfChat.dll
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\WcfChat\obj\Debug\WcfChat.pdb
