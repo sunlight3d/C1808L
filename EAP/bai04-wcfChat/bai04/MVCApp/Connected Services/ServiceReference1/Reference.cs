@@ -138,7 +138,7 @@ namespace MVCApp.ServiceReference1 {
         private string UserNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private MVCApp.ServiceReference1.Chat[] tblChatsField;
+        private System.Collections.Generic.List<MVCApp.ServiceReference1.Chat> tblChatsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -177,7 +177,7 @@ namespace MVCApp.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public MVCApp.ServiceReference1.Chat[] tblChats {
+        public System.Collections.Generic.List<MVCApp.ServiceReference1.Chat> tblChats {
             get {
                 return this.tblChatsField;
             }
@@ -216,10 +216,10 @@ namespace MVCApp.ServiceReference1 {
         System.Threading.Tasks.Task<string> RegisterAsync(string Username, string Password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllChat", ReplyAction="http://tempuri.org/IService1/GetAllChatResponse")]
-        MVCApp.ServiceReference1.Chat[] GetAllChat();
+        System.Collections.Generic.List<MVCApp.ServiceReference1.Chat> GetAllChat();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllChat", ReplyAction="http://tempuri.org/IService1/GetAllChatResponse")]
-        System.Threading.Tasks.Task<MVCApp.ServiceReference1.Chat[]> GetAllChatAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<MVCApp.ServiceReference1.Chat>> GetAllChatAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SendChat", ReplyAction="http://tempuri.org/IService1/SendChatResponse")]
         string SendChat(string Content, string UserName);
@@ -271,11 +271,11 @@ namespace MVCApp.ServiceReference1 {
             return base.Channel.RegisterAsync(Username, Password);
         }
         
-        public MVCApp.ServiceReference1.Chat[] GetAllChat() {
+        public System.Collections.Generic.List<MVCApp.ServiceReference1.Chat> GetAllChat() {
             return base.Channel.GetAllChat();
         }
         
-        public System.Threading.Tasks.Task<MVCApp.ServiceReference1.Chat[]> GetAllChatAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<MVCApp.ServiceReference1.Chat>> GetAllChatAsync() {
             return base.Channel.GetAllChatAsync();
         }
         
