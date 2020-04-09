@@ -76,3 +76,4 @@ C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\MVCApp\obj\Debug\MVCApp.cs
 C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\MVCApp\obj\Debug\MVCApp.csproj.CopyComplete
 C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\MVCApp\obj\Debug\MVCApp.dll
 C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\MVCApp\obj\Debug\MVCApp.pdb
+C:\Users\User\Documents\code\C1808L\EAP\bai04\WcfChat\MVCApp\obj\Debug\MVCApp.csprojAssemblyReference.cache

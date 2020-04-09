@@ -70,6 +70,7 @@ namespace WcfChat
                     UserName = Username,
                     SentTime = DateTime.Now
                 });
+                dbContext.SaveChanges();
                 return "";
             }
             catch (Exception e) {

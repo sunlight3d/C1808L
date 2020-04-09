@@ -1,6 +1,7 @@
 -- Create database template
 -- =============================================
 -- Drop the database if it already exists
+drop database dbChat;
 create database dbChat;
 
 CREATE TABLE tblUser(
@@ -24,3 +25,4 @@ VALUES('how are you ?', 'hoangnd', GETDATE())
 INSERT INTO tblChat(Content, UserName, SentTime)
 VALUES('I''m fine', 'hoangnd', GETDATE())
 
+select * from tblUser;
