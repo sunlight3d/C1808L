@@ -26,3 +26,4 @@ INSERT INTO tblChat(Content, UserName, SentTime)
 VALUES('I''m fine', 'hoangnd', GETDATE())
 
 select * from tblUser;
+select * from tblChat;
