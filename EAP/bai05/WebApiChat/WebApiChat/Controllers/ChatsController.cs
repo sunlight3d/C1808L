@@ -20,11 +20,13 @@ namespace WebApiChat.Controllers
             return chats;
         }
         //https:localhost: port/api/chats/10
-        public Chat Get(int id) {            
+        public Chat Get(int id)
+        {
             return context.tblChats.Where(chat => chat.Id == id).FirstOrDefault();
         }
         [HttpPost]
-        public IHttpActionResult Post(string Content, string UserName) {
+        public IHttpActionResult Post(string Content, string UserName)
+        {
             try
             {
                 var newChat = new Chat()
@@ -35,15 +37,15 @@ namespace WebApiChat.Controllers
                 };
                 context.tblChats.Add(newChat);
                 context.SaveChanges();
-                return Json(newChat);
+                return Json(newChat);//Helper Method
             }
             catch (Exception e)
             {
                 return new HttpActionResult(HttpStatusCode.InternalServerError, e.ToString());
             }
-            
+
         }
-     
+
     }
 
 }

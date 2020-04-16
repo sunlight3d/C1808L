@@ -12,6 +12,7 @@ namespace WebApiChat.Controllers
         private DbChat context = new DbChat();
         [HttpGet]
         //https://localhost:44348/api/user?Username=hoangnd&Password=123456
+        //chuc nang login
         public bool Get(string Username, string Password) {            
             return context.tblUsers
                 .Where(user => user.UserName == Username && user.Password == Password)
