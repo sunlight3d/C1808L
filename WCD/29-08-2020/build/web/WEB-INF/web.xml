@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter>
+    <filter-name>Filter1</filter-name>
+    <filter-class>filters.Filter1</filter-class>
+        <init-param>
+            <param-name>x</param-name>
+            <param-value>1</param-value>
+        </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>Filter1</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
