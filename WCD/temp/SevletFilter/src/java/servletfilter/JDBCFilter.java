@@ -44,6 +44,8 @@ public class JDBCFilter implements Filter {
         // Tránh tình trạng mở Connection với các yêu cầu thông thường
         // (Chẳng hạn image, css, javascript,... )
         // 
+        chain.doFilter(request, response);
+        /*
         if (servletPath.contains("/specialPath1") || servletPath.contains("/specialPath2")) {
             Connection conn = null;
             try {
@@ -71,6 +73,7 @@ public class JDBCFilter implements Filter {
             // Cho phép request đi tiếp (Vượt qua Filter này).
             chain.doFilter(request, response);
         }
+       */
  
     }
  

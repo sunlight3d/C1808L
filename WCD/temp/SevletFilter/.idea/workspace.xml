@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f385e83-3d68-4955-a7c9-a863da0abf6d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/nbproject/ant-deploy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/src/conf/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/src/java/database/ConnectionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/src/java/database/MyUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/src/java/servletfilter/ImageFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/src/java/servletfilter/JDBCFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/src/java/servletfilter/Log2Filter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/src/java/servletfilter/LogFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/web/images/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/web/images/notfound.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FilterJspExamples/SevletFilter/web/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1guc8DIAzjWhNDvtX9SVuZb6an8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f385e83-3d68-4955-a7c9-a863da0abf6d" name="Default Changelist" comment="" />
+      <created>1598967756953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598967756953</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="225" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598967816871">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="225" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1598967816871" />
+  </component>
+</project>
